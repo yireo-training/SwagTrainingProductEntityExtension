@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="https://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <!--
+        <prototype
+                namespace="SwagTraining\ProductEntityExtension\"
+                resource="../../"
+                autowire="true"
+                autoconfigure="true"
+        />
+        -->
+
+        <service id="SwagTraining\ProductEntityExtension\Extension\Content\Product\ExampleExtension">
+            <tag name="shopware.entity.extension"/>
+        </service>
+
+        <service id="SwagTraining\ProductEntityExtension\Subscriber\ProductSubscriber">
+            <tag name="kernel.event_subscriber"/>
+        </service>
+    </services>
+</container>

@@ -1,0 +1,40 @@
+{
+  "name": "swag-training/shopware6-product-entity-extension",
+  "description": "Example of adding an entity extension to a product",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "SwagTraining"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.4"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "SwagTraining\\ProductEntityExtension\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "SwagTraining\\ProductEntityExtension\\SwagTrainingProductEntityExtension",
+    "copyright": "SwagTraining",
+    "label": {
+      "de-DE": "SwagTrainingProductEntityExtension",
+      "en-GB": "SwagTrainingProductEntityExtension"
+    },
+    "description": {
+      "de-DE": "Example of adding an entity extension to a product",
+      "en-GB": "Example of adding an entity extension to a product"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://acme.org",
+      "en-GB": "https://acme.org"
+    },
+    "supportLink": {
+      "de-DE": "https://acme.org",
+      "en-GB": "https://acme.org"
+    }
+  }
+}
