@@ -15,7 +15,7 @@ bin/console plugin:install --activate SwagTrainingProductEntityExtension
 This is supported by the core. You own data will reside in a separate table which is joined by the association.
 
 ### `customExtension1`: WORKING
-**Simple array extension added via event observer `\SwagTraining\ProductEntityExtension\Subscriber\ProductSubscriber::onProductsLoaded**()`
+**Simple array extension added via event observer `\SwagTraining\ProductEntityExtension\Subscriber\ProductSubscriber::onProductsLoaded()`**
 
 This is supported by the core. Unfortunately, all of the data loading needs to happen by you, which leads to additional queries.
 
